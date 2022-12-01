@@ -48,7 +48,7 @@ const findHeartiestThreeElves = (calorieArray) => {
       temp = 0;
     }
   }
-  // sum of three Max values value from totals array - Math.max is O(n), so if I run it three times it O (3n) which isn't bad... but looping through can reduce that... mergesort = O (n log n) Timesort = (O n)
+  // sum of three Max values value from totals array - Math.max is O(n), so if I run it three times it O (3n)... -1 meh. mergesort = O (n log n) Timesort = (O n)
   //instead of using math.max, I'm going to sort the totals array (about the same time complexity) and return the sum of the last three elements
   totals.sort((a, b) => a - b);
   return Number(totals[totals.length - 1]) + Number(totals[totals.length - 2]) + Number(totals[totals.length - 3]);
