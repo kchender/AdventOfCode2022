@@ -8,7 +8,7 @@ const fs = require('fs');
 // me: x = R, y = P, z = S
 
 // grab data from text document, convert from buffer to readable string, and then convert to array (split at every newline character)
-const data: string[] = fs.readFileSync('DayTwoTS/dayTwoTSInput.txt').toString().split(/\r?\n/);
+const data: string[] = fs.readFileSync('2DayTwoTS/dayTwoTSInput.txt').toString().split(/\r?\n/);
 
 const getScores = (plays: string[]): string => {
   let sumABC: number = 0;

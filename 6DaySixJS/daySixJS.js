@@ -6,7 +6,7 @@
 
 const fs = require('fs');
 // access text data from fs, convert buffer to string
-const data = fs.readFileSync('DaySix/daySixInput.txt').toString();
+const data = fs.readFileSync('DaySixJS/daySixInput.txt').toString();
 
 // Pt. 1 // 
 const numCharsPreMarker = (buffer) => {
